@@ -1,5 +1,7 @@
 'use strict'
 
+require("dotenv").config();
+
 const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
@@ -20,5 +22,6 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 require('./src/routes')(app);
 
 const port = process.env.PORT || 5000;
-console.log('Listening on port ' + port)
-app.listen(port);
+const addr = process.env.ADDR || "127.0.0.1";
+console.log('Listening on ' + addr + ':' + port);
+app.listen(port, addr);
