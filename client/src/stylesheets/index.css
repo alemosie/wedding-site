@@ -17,3 +17,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* GENERAL STYLES */
+
+p {
+  font-family: 'lato'
+}
+
+a {
+  color: #9E3D22;
+}
+
+a:hover {
+  color: #92BFB1;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.emphasis {
+  font-style: italic;
+}

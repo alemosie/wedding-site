@@ -26,15 +26,6 @@
   width: 400px;
 }
 
-.home-content a {
-  color: #9E3D22;
-}
-
-.home-content a:hover {
-  color: #92BFB1;
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 990px) {
   .home-container .image-container {
     padding: 0 20%;
