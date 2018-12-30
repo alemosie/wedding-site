@@ -1,13 +1,15 @@
 [ 
-  ["June", "2012", "Apparently met, according to our emails"],
-  ["October", "2013", "Met for real on a train platform 🚉 in D.C."],
-  ["January", "2014", "First date"],
-  ["March", "2015", "Visited the Sloth Sanctuary in Costa Rica!"],
-  ["July", "2015", "Moved in together 🏡"],
-  ["February", "2016", "Moved up to NYC"],
-  ["July", "2017", "Traveled to Israel"],
-  ["September", "2017", "Mike went to Italy 🇮🇹 for the first time"],
-  ["February", "2018", "Moved to Brooklyn"],
-  ["September", "2018", "Traveled across India"],
-  ["December", "2018", "Got engaged! 💍"]
+  ["June", "2012", "Apparently met, according to our emails", false],
+  ["October", "2013", "Met for real on a train platform 🚉 in D.C.", true],
+  ["January", "2014", "First date", true],
+  ["March", "2015", "Visited the Sloth Sanctuary in Costa Rica!", false],
+  ["July", "2015", "Moved in together 🏡", true],
+  ["December", "2015", "Our first New Year's Eve gathering", false],
+  ["February", "2016", "Moved up to NYC", true],
+  ["July", "2017", "Traveled to Israel", false],
+  ["September", "2017", "Mike went to Italy 🇮🇹 for the first time", false],
+  ["February", "2018", "Moved to Brooklyn", true],
+  ["July", "2018", "Mike began forging the ring", false],
+  ["September", "2018", "Traveled across India", false],
+  ["December", "2018", "Got engaged! 💍", true]
 ]
