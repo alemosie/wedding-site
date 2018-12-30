@@ -1,15 +1,16 @@
-.App {
-  text-align: center;
+.app-container {
+  height: 100%;
 }
 
 .nav-header {
   background-color:  #92BFB1;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   border-bottom: 4px solid #9E3D22;
   font-family: 'Roboto Slab', serif;
   display: flex;
   flex-direction: row;
+  height: 68px;
 }
 
 .nav-logo-container {
@@ -66,6 +67,14 @@
   margin: 0px;
 }
 
+.content {
+  width: 100%;
+  height: -webkit-calc(100% - 68px);
+  height: -moz-calc(100% - 68px);
+  height: calc(100% - 68px);
+  padding: 58px 24px 0;
+}
+
 .content h1, h2 {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
@@ -87,18 +96,35 @@
 
   .nav-link-container {
     justify-content: center;
-    margin-top: 12px;
+    position: absolute;
+    top: 78px;
+  }
+
+  .nav-link-container a {
+    padding: 0;
+    margin: 0 8px;
+    min-width: 124px;
+  }
+
+
+  #sloth-space {
+    width: 100px;
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 660px) {
   .nav-link-container a {
     font-size: 20px;
-    min-width: 120px;
+    min-width: 110px;
+    padding: 2px;
   }
 }
 
-@media only screen and (max-width: 507px) {
+@media only screen and (max-width: 604px) {
+  .nav-header {
+    height: 78px;
+  }
+
   .nav-link-container {
     flex-direction: row;
     align-items: center;
@@ -107,12 +133,16 @@
 
   .logo {
     height: 60px;
-    margin-top: 8px;
+    margin: 8px;
   }
 
   .nav-link-container a {
     font-size: 14px;
     min-width: 72px;
     padding: 4px;
+  }
+
+  #sloth-space {
+    width: 0;
   }
 }
