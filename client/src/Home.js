@@ -9,10 +9,10 @@ class Home extends Component {
     return (
       <Grid className="home-container">
         <Row>
-          <Col xs={6} md={6} className="image-container">
+          <Col xs={6} sm={12} md={6} lg={6} className="image-container">
             <a href={engagementPhoto}><Image src={engagementPhoto} responsive /></a>
           </Col>
-          <Col xs={6} md={6} className="home-content">
+          <Col xs={6} sm={12} md={6} lg={6} className="home-content">
             <h1>
               <span role="img" aria-label="sneaker">👟</span>
               <span role="img" aria-label="heart-exclamation">❣️</span>
