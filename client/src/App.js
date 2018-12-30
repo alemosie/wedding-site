@@ -4,13 +4,12 @@ import {
   NavLink,
   BrowserRouter
 } from "react-router-dom";
-import { PageHeader, Nav, Navbar, NavItem } from 'react-bootstrap';
 import Home from "./Home";
 import About from "./About";
 import Wedding from "./Wedding";
 import Rsvp from "./Rsvp";
 import Registry from "./Registry";
-import logo from './images/logo.png';
+import logo from './images/header-logo.png';
 import './stylesheets/App.css';
 
 class App extends Component {
@@ -18,12 +17,16 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <div class="nav-header">
-            <NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink>
-            <NavLink to="/about">About Us</NavLink>
-            <NavLink to="/wedding">Wedding</NavLink>
-            <NavLink to="/rsvp">RSVP</NavLink>
-            <NavLink to="/registry">Registry</NavLink>
+          <div className="nav-header">
+            <div className="nav-logo-container">
+              <NavLink to="/"><img src={logo} className="logo" alt="logo"/></NavLink>
+            </div>
+            <div className="nav-link-container">
+              <NavLink to="/about">About Us</NavLink>
+              <NavLink to="/wedding">Wedding</NavLink>
+              <NavLink to="/rsvp">RSVP</NavLink>
+              <NavLink to="/registry">Registry</NavLink>
+            </div>
           </div>
           <div className="content">
             <Route exact path="/" component={Home}/>
