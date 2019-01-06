@@ -1,10 +1,14 @@
 import React, { Component } from "react";
- 
+import Header from './Header'
+
 class Wedding extends Component {
   render() {
     return (
       <div>
-        <h2>The Wedding</h2>
+        <Header/>
+        <div className="content">
+          <h2>The Wedding</h2>
+        </div>
       </div>
     );
   }

@@ -1,43 +1,16 @@
 import React, { Component } from "react";
-import {
-  Route,
-  NavLink,
-  BrowserRouter
-} from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Wedding from "./Wedding";
-import Rsvp from "./Rsvp";
-import Registry from "./Registry";
-import logo from './images/header-logo.png';
+import Container from './Container'
 import './stylesheets/App.css';
+import { BrowserRouter as Router } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="app-container">
-          <div className="nav-header">
-            <div className="nav-logo-container">
-              <NavLink to="/"><img src={logo} className="logo" alt="logo"/></NavLink>
-            </div>
-            <div className="nav-link-container">
-              <NavLink to="/about">About Us</NavLink>
-              <NavLink to="/wedding">Wedding</NavLink>
-              <div id="sloth-space"></div>
-              <NavLink to="/rsvp">RSVP</NavLink>
-              <NavLink to="/registry">Registry</NavLink>
-            </div>
-          </div>
-          <div className="content">
-            <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/wedding" component={Wedding}/>
-            <Route path="/rsvp" component={Rsvp}/>
-            <Route path="/registry" component={Registry}/>
-          </div>
-        </div>
-      </BrowserRouter>
+      <div className="app-container">
+        <Router>
+            <Container/>
+        </Router>
+      </div>
     );
   }
 }
