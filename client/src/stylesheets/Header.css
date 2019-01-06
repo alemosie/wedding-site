@@ -1,5 +1,9 @@
 .nav-header {
   background-color:  #92BFB1;
+  background-image: url('../images/sloth-bg-2.jpg');
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right;
   padding: 0;
   margin: 0;
   border-bottom: 4px solid #9E3D22;
@@ -52,11 +56,8 @@
 
 .header {
   background-color: #282c34;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
   list-style-type: none;

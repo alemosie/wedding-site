@@ -1,37 +1,38 @@
 .home-container {
-  width: 100%;
-  display: flex;
+  background-image: url('../images/sloth-splash-2.jpg');
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
 }
 
-.home-container .row {
-  margin: 0px;
+.home-content-container {
+  height: 100vh;
+  padding: 10px;
 }
 
 .home-content {
-  color: black;
-  border-radius: 6px;
-  padding: 4px;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: #f3ebd8;
+  color: #5C2D5B;
+  border: 5px solid #5C2D5B;
+  margin: 24px;
+  font-family: 'Roboto Slab', serif;
+  width: fit-content;
+  padding: 16px 16px 8px 16px;
 }
 
-.home-content h2, h3 {
-  font-family: 'Lato', sans-serif;
+.home-content h1 {
+  margin: 0 0 16px;
+  font-weight: bold;
 }
 
-.home-content img {
-  width: 400px;
+.home-content h2 {
+  margin: 0px;
 }
 
-@media only screen and (max-width: 990px) {
-  .home-container .image-container {
-    padding: 0 20%;
-  }
-
-  .home-content {
-    height: auto;
-  }
+.home-content a {
+  padding: 0;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
 }

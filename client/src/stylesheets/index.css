@@ -6,10 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #DAD6D6;
-}
-
-body > #root > div {
+  background-color: #f3ebd8;
   height: 100vh;
 }
 

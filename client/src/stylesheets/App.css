@@ -1,5 +1,6 @@
 .app-container {
   height: 100%;
+  background-color: #f3ebd8;
 }
 
 .content {
@@ -8,9 +9,10 @@
   height: -moz-calc(100% - 68px);
   height: calc(100% - 68px);
   padding: 58px 24px 0;
+  background-color: #f3ebd8;
 }
 
-.content h1, h2 {
+.content h1, .content h2 {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   margin-bottom: 16px;
@@ -84,7 +86,7 @@
 }
 
 .fade-enter {
-  opacity: 0.01;
+  opacity: 0.9;
 }
 
 .fade-enter.fade-enter-active {
@@ -97,7 +99,7 @@
 }
 
 .fade-exit.fade-exit-active {
-  opacity: 1;
+  opacity: 0.9;
   transition: opacity 200ms ease-in;
 }
 
