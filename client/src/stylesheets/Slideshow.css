@@ -1,0 +1,10 @@
+#about-slideshow .item {
+  margin: auto;
+  background-color: black;
+}
+
+#about-slideshow .item img {
+  max-width: none;
+  width: auto;
+  height: 500px;
+}
