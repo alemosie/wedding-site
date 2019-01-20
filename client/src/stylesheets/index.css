@@ -23,13 +23,12 @@ p {
 }
 
 a {
-  /* color: #9E3D22; */
   color: #AC543C;
 }
 
 a:hover {
   /* color: #92BFB1; */
-  color: #9daab0;
+  color: #9DAAB0;
   text-decoration: none;
 }
 

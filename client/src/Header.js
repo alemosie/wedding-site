@@ -6,22 +6,22 @@ import './stylesheets/Header.css';
 class Header extends Component {
   render() {
     return (
-      <div>
+      <section>
+        <div className="nav-header-container">
+        </div>
         <div className="nav-header">
           <div className="nav-logo-container">
-            <NavLink to="/"><img src={logo} className="logo" alt="logo"/></NavLink>
+            <NavLink to="/"><img src={logo} className="logo" alt="logo" /></NavLink>
           </div>
           <div className="nav-link-container">
             <NavLink to="/wedding">The Wedding</NavLink>
-            <NavLink to="/about">About Us</NavLink>
             <div id="sloth-space"></div>
-            <NavLink to="/rsvp">RSVP</NavLink>
-            <NavLink to="/registry">Registry</NavLink>
+            <NavLink to="/about">About Us</NavLink>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
- 
+
 export default Header;

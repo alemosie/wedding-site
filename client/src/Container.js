@@ -6,30 +6,22 @@ import Wedding from "./Wedding";
 import Rsvp from "./Rsvp";
 import Registry from "./Registry";
 import './stylesheets/App.css';
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+// import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class Container extends Component {
   render() {
     const { location } = this.props
     return (
       <div>
-        <TransitionGroup>
-          <CSSTransition
-            key={location.key}
-            timeout={{ enter: 100, exit: 100 }}
-            classNames={"fade"}
-          >
-            <section className="route-section">
-              <Switch location={location}>
-                <Route exact path="/" component={Home}/>
-                <Route path="/about" component={About}/>
-                <Route path="/wedding" component={Wedding}/>
-                <Route path="/rsvp" component={Rsvp}/>
-                <Route path="/registry" component={Registry}/>
-              </Switch>
-            </section>
-          </CSSTransition>
-        </TransitionGroup>
+        <section className="route-section">
+          <Switch location={location}>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/wedding" component={Wedding} />
+            <Route path="/rsvp" component={Rsvp} />
+            <Route path="/registry" component={Registry} />
+          </Switch>
+        </section>
       </div>
     );
   }
