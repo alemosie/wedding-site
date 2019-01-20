@@ -6,7 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f3ebd8;
+  /* background-color: #f3ebd8; */
+  background-color: #F1EAD9;
   height: 100vh;
 }
 
@@ -22,11 +23,13 @@ p {
 }
 
 a {
-  color: #9E3D22;
+  /* color: #9E3D22; */
+  color: #AC543C;
 }
 
 a:hover {
-  color: #92BFB1;
+  /* color: #92BFB1; */
+  color: #9daab0;
   text-decoration: none;
 }
 

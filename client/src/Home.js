@@ -8,15 +8,23 @@ class Home extends Component {
       <div className="home-container">
         <div className="home-content-container">
           <div className="home-content">
-            <h1><span className="triangle">◤</span> Mike & Alex <span className="triangle">◥</span></h1>
+            <div className="triangle">
+              <span className="top right">◤</span>
+              <span className="top left">◥</span>
+            </div>
+            <h1>Mike & Alex</h1>
             <h2>September 21, 2019</h2>
             <h2>at the Lyman Estate</h2>
             <h3><NavLink to="/wedding">More info ➤</NavLink></h3>
+            <div className="triangle">
+              <span className="bottom right">◣</span>
+              <span className="bottom left">◢</span>
+            </div>
           </div>
         </div>
       </div>
     );
   }
 }
- 
+
 export default Home;

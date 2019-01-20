@@ -8,31 +8,135 @@
 
 .home-content-container {
   height: 100vh;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .home-content {
-  background-color: #f3ebd8;
-  color: #5C2D5B;
-  border: 5px solid #5C2D5B;
-  margin: 24px;
+  background-color: #F1EAD9;
+  color: #5E315B;
+  border: 5px solid #5E315B;
+  margin: 24px 30px;
   font-family: 'Roboto Slab', serif;
   width: fit-content;
-  padding: 16px 16px 8px 16px;
+  height: fit-content;
+  padding: 32px 32px 16px 32px;
+  text-align: center;
 }
 
 .home-content h1 {
-  margin: 0 0 16px;
-  font-weight: bold;
+  margin: 8px 32px 16px;
+  font-family: 'Pacifico', cursive;
+  font-size: 48px;
 }
 
 .home-content h2 {
   margin: 0px;
+  font-size: 32px;
 }
-
+.home-content h3 {
+  margin: 36px 0 16px;
+}
 .home-content a {
   padding: 0;
   margin: 10px 0 0 0;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Border triangles */
+
+.triangle {
+  font-size: 48px;
+  color: #5C2D5B;
+  height: 0;
+}
+.triangle .top {
+  position: relative;
+  top: -54px;
+}
+.triangle .left {
+  left: 170px;
+}
+.triangle .right {
+  left: -170px;
+}
+.triangle .bottom {
+  position: relative;
+  top: -30px;
+}
+
+@media only screen and (max-width: 660px) {
+  .home-content h1 {
+    font-size: 40px;
+    margin: 0 16px 16px;
+  }
+
+  .home-content h2 {
+    font-size: 24px;
+  }
+
+  .home-content h3 {
+     margin: 24px 0 8px;
+  }
+
+  .home-content a {
+    font-size: 16px;
+  }
+
+  .triangle {
+    font-size: 40px;
+  }
+  .triangle .top {
+    top: -50px;
+  }
+  .triangle .bottom {
+    top: -24px;
+  }
+  .triangle .right {
+    left: -135px;
+  }
+  .triangle .left {
+    left: 135px;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+  .home-content-container {
+    justify-content: center;
+  }
+  .home-content h1 {
+    margin: 0 0 16px;
+  }
+  .triangle .right {
+    left: -120px;
+  }
+  .triangle .left {
+    left: 120px;
+  }
+}
+
+@media only screen and (max-width: 369px) {
+  .home-content h1 {
+    font-size: 32px;
+    margin: 0 0 16px;
+  }
+  .home-content h2 {
+    font-size: 21px;
+  }
+  .triangle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 342px) {
+  .home-content h2 {
+    font-size: 18px;
+  }
+  .home-content h3 {
+    font-size: 16px;
+  }
+  .home-content a {
+    margin-top: 8px;
+  }
 }
