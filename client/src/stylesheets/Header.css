@@ -63,7 +63,7 @@
 
 .nav-link-container .active {
   background-color: #5E315B;
-  color: #DAD6D6;
+  color: #F3EBD8;
   text-decoration: none;
 }
 
@@ -78,7 +78,7 @@
   }
 
   .logo {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 10px;
   }
 
   .nav-link-container {
@@ -129,5 +129,11 @@
 
   #sloth-space {
     width: 0;
+  }
+}
+
+@media only screen and (max-width: 263px) {
+  .nav-link-container {
+    top: 50px;
   }
 }
