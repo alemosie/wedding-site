@@ -1,31 +1,30 @@
 import React, { Component } from "react";
-import { Grid, Row, Col, Image } from 'react-bootstrap';
-import engagementPhoto from './images/engagement-photo.jpg';
-
+import { NavLink } from "react-router-dom";
 import './stylesheets/Home.css';
 
 class Home extends Component {
   render() {
     return (
-      <Grid className="home-container">
-        <Row>
-          <Col xs={6} sm={12} md={6} lg={6} className="image-container">
-            <a href={engagementPhoto}><Image src={engagementPhoto} responsive /></a>
-          </Col>
-          <Col xs={6} sm={12} md={6} lg={6} className="home-content">
-            <h1>
-              <span role="img" aria-label="sneaker">👟</span>
-              <span role="img" aria-label="heart-exclamation">❣️</span>
-              <span role="img" aria-label="rocket">🚀</span>
-            </h1>
-            <h1>We're getting married!</h1>
+      <div className="home-container">
+        <div className="home-content-container">
+          <div className="home-content">
+            <div className="triangle">
+              <span className="top right">◤</span>
+              <span className="top left">◥</span>
+            </div>
+            <h1>Mike & Alex</h1>
             <h2>September 21, 2019</h2>
-            <h3>Lyman Estate in <a href="https://bit.ly/2RsRbSk">Waltham, MA</a></h3>
-          </Col>
-        </Row>
-      </Grid>
+            <h2>at the Lyman Estate</h2>
+            <h3><NavLink to="/wedding">More info ➤</NavLink></h3>
+            <div className="triangle">
+              <span className="bottom right">◣</span>
+              <span className="bottom left">◢</span>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
- 
+
 export default Home;

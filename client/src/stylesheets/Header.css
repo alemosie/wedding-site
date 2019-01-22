@@ -1,0 +1,139 @@
+.nav-header-container {
+  height: 68px;
+
+  background-image: url('../images/sloth-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+  position: relative;
+}
+
+.nav-header {
+  height: 68px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+  border-bottom: 4px solid #5E315B;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logo-container {
+  display: flex;
+  width: fit-content;
+  margin-right: 24px;
+}
+
+.logo {
+  height: 100px;
+  margin: 12px 8px 8px 16px;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: center;
+  margin-left: 24px;
+  width: 100%;
+}
+
+.nav-link-container a {
+  color: #5E315B;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 8px 16px 0;
+  margin: 0 20px 0 0;
+
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+}
+
+.nav-link-container a:hover {
+  text-decoration: none;
+}
+
+.nav-link-container .active {
+  background-color: #5E315B;
+  color: #F1EAD9;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo-container {
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 10px 0 0 10px;
+  }
+
+  .nav-link-container {
+    justify-content: center;
+    position: relative;
+    top: 46px;
+    margin-left: 0;
+  }
+
+  .nav-link-container a {
+    margin: 0 8px;
+    padding: 8px;
+    width: 150px;
+    font-size: 20px;
+  }
+
+  #sloth-space {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-header-container {
+    height: 114px;
+  }
+
+  .nav-header {
+    height: 114px;
+  }
+
+  .nav-link-container {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+    top: 36px;
+  }
+
+  .logo {
+    height: 74px;
+    margin-top: 20px;
+  }
+
+  .nav-link-container a {
+    font-size: 16px;
+    width: 45%;
+    padding: 8px;
+  }
+
+  #sloth-space {
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 263px) {
+  .nav-link-container {
+    top: 50px;
+  }
+}

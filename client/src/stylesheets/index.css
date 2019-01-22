@@ -6,10 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #DAD6D6;
-}
-
-body > #root > div {
+  background-color: #F1EAD9;
   height: 100vh;
 }
 
@@ -25,11 +22,15 @@ p {
 }
 
 a {
-  color: #9E3D22;
+  color: #AC543C;
 }
 
 a:hover {
-  color: #92BFB1;
+  color: #9DAAB0;
+  text-decoration: none;
+}
+
+a:focus {
   text-decoration: none;
 }
 
