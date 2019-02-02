@@ -63,11 +63,11 @@
 
 .nav-link-container .active {
   background-color: #5E315B;
-  color: #DAD6D6;
+  color: #F1EAD9;
   text-decoration: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 710px) {
   .nav-header {
     flex-direction: column;
     align-items: center;
@@ -75,10 +75,11 @@
 
   .nav-logo-container {
     justify-content: center;
+    margin-top: 2px;
   }
 
   .logo {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 10px;
   }
 
   .nav-link-container {
@@ -91,7 +92,7 @@
   .nav-link-container a {
     margin: 0 8px;
     padding: 8px;
-    width: 150px;
+    width: 160px;
     font-size: 20px;
   }
 
@@ -112,8 +113,7 @@
   .nav-link-container {
     flex-direction: row;
     align-items: center;
-    margin-top: 8px;
-    top: 36px;
+    top: 20px;
   }
 
   .logo {
@@ -131,3 +131,9 @@
     width: 0;
   }
 }
+
+/* @media only screen and (max-width: 263px) {
+  .nav-link-container {
+    top: 50px;
+  }
+} */
