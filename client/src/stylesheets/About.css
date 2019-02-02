@@ -1,5 +1,33 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-content-container {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content-container h1, h2 {
+  /* padding-bottom: 8px;
+  border-bottom: 4px solid black; */
+}
+
+/* timeline */
+
 .timeline-container {
+  margin-left: 72px;
   padding: 0px;
+}
+
+.about-container .timeline-container h2 {
+  margin: 0 0 14px 24px;
+}
+
+#timeline {
+  font-family: 'Lato', sans-serif;
 }
 
 #timeline {
@@ -11,12 +39,12 @@
 }
 
 #timeline td:nth-child(1) {
-  color: #777575;
+  color: #908C82;
   text-align: right;
 }
 
 #timeline td:nth-child(2) {
-  color: #9E3D22;
+  color: #908C82;
   font-size: 26px;
   font-weight: bold;
   padding: 16px 8px;
@@ -27,9 +55,129 @@
 }
 
 #timeline td.highlight {
-  color: #DE9D3F;
+  color: #AC543C;
+}
+
+
+/* how we met */
+
+#how-we-met {
+  width: 620px;
+}
+
+#how-we-met h1 {
+  margin-bottom: 32px;
 }
 
 #how-we-met h2, h3, h4 {
   font-family: 'Lato', sans-serif;
+}
+
+#how-we-met p {
+  font-size: 16px;
+}
+
+
+/* photo slides */
+
+.slides-container {
+  width: 620px;
+  margin: 0 0 48px;
+}
+
+.slides-small {
+  display: none;
+}
+
+.slides-container img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+@media only screen and (max-width: 1180px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-content-container {
+    margin-left: 0;
+  }
+  .about-content-container h1, h2 {
+    width: auto;
+    text-align: center;
+  }
+
+  .timeline-container {
+    margin-left: 0;
+  }
+
+  .about-content-container .timeline-container h2 {
+    margin-left: 0;
+  }
+
+  #how-we-met {
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about-content-container {
+    align-items: center;
+  }
+  .slides-container {
+    width: 472px;
+    margin: 16px 0 24px;
+  }
+  .slides-container img {
+    object-fit: cover;
+  
+    width: 150px;
+    height: 150px;
+  }
+
+  #how-we-met {
+    width: 472px;
+  }
+
+  .timeline-container {
+    margin-bottom: 24px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .slides-container {
+    width: 317px;
+    margin: 8px 0 24px;
+  }
+  .slides-large {
+    display: none;
+  }
+  .slides-small {
+    display: block;
+  }
+  .about-content-container h1 {
+    font-size: 30px;
+  }
+  #how-we-met {
+    width: 317px;
+    margin-bottom: 24px;
+  }
+  #how-we-met p {
+    font-size: 14px;
+  }
+  .timeline-container {
+    width: 317px;
+  }
+  .timeline-container h2 {
+    font-size: 26px;
+  }
+
+
+
 }

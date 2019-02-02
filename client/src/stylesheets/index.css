@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #f3ebd8; */
   background-color: #F1EAD9;
   height: 100vh;
 }
@@ -27,8 +26,11 @@ a {
 }
 
 a:hover {
-  /* color: #92BFB1; */
   color: #9DAAB0;
+  text-decoration: none;
+}
+
+a:focus {
   text-decoration: none;
 }
 
