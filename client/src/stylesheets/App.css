@@ -8,7 +8,7 @@
   height: -webkit-calc(100% - 68px);
   height: -moz-calc(100% - 68px);
   height: calc(100% - 68px);
-  padding: 72px 24px 24px;
+  padding: 92px 24px 24px;
   background-color: #F1EAD9;
 }
 
@@ -23,4 +23,37 @@ section.route-section {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+/* GENERAL STYLES */
+
+p {
+  font-family: 'lato'
+}
+
+a {
+  color: #AC543C;
+}
+
+a:hover {
+  color: #9DAAB0;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 450px) {
+  .content {
+    padding-top: 72px;
+  }
 }
