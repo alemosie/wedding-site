@@ -76,7 +76,7 @@ class About extends Component {
                 <Slides numSlides={2} hasDots={true} />
               </div>
             </div>
-            <div id="how-we-met">
+            <div className="about-content">
               <h1>How we met</h1>
               <p>
                 They apparently met at an internship orientation.
@@ -104,7 +104,7 @@ But it worked out in the end!
             </div>
           </div>
           <div className="timeline-container">
-            <h2>Timeline</h2>
+            <h1>Timeline</h1>
             {this.createTable(timelineData)}
           </div>
         </div>
