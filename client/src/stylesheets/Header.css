@@ -59,12 +59,17 @@
 
 .nav-link-container a:hover {
   text-decoration: none;
+  color: #5E315B;
 }
 
 .nav-link-container .active {
   background-color: #5E315B;
   color: #F1EAD9;
   text-decoration: none;
+}
+
+.nav-link-container a.active:hover {
+  color: #F1EAD9;
 }
 
 @media only screen and (max-width: 710px) {

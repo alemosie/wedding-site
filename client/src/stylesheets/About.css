@@ -58,6 +58,7 @@
 
 .about-content {
   width: 620px;
+  align-items: center;
 }
 
 .about-content h1 {
@@ -69,8 +70,30 @@
 }
 
 .about-content p {
-  font-size: 16px;
+  font-size: 18px;
+  margin-bottom: 24px;
 }
+
+.about-content .section-header {
+  margin-top: 48px;
+}
+
+.about-content .image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-content .image-container p {
+  margin-left: 24px;
+}
+
+.about-content .image-container img {
+  height: 190px;
+  width: 190px;
+  margin-bottom: 24px;
+}
+
 
 
 /* photo slides */
@@ -141,7 +164,18 @@
   .about-content {
     width: 472px;
   }
-
+  .about-content .section-header {
+    margin-top: 36px;
+  }
+  .about-content .image-container {
+    flex-direction: column;
+  }
+  .about-content .image-container img {
+    margin-top: 8px;
+  }
+  .about-content .image-container p {
+    margin-left: 0;
+  }
   .timeline-container {
     margin-bottom: 24px;
   }
@@ -168,7 +202,7 @@
     margin-bottom: 24px;
   }
   .about-content p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .timeline-container {
     width: 317px;

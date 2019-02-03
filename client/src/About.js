@@ -5,6 +5,7 @@ import './stylesheets/About.css';
 
 import timelineData from './data/dates.json';
 import photoData from './data/photos.json'
+import ringPhoto from './images/engagement-ring.jpg'
 
 class Slides extends React.Component {
 
@@ -79,28 +80,29 @@ class About extends Component {
             <div className="about-content">
               <h1>How we met</h1>
               <p>
-                They apparently met at an internship orientation.
-                Neither of them remembers this (and only discovered it via Gmail history),
-                    so where they <span className="emphasis">really</span> met is on a train after work one day.
-                  </p>
+                Alex and Mike met in Washington DC when she inserted herself into his Friday evening commute.
+                He and a few friends were partaking in their tradition of Friday wine and cheese on the train,
+                and Alex was hungry. Cheese led to conversation, and culminated in an agreement to swap their
+                favorite Russian novels and meet up to discuss over coffee. Of course, Alex didn’t realize
+                this was a date and took three months to read <span className="emphasis">The Brothers Karamazov</span>.
+              </p>
               <p>
-                Mike was part of the elite "Club <a href="https://en.wikipedia.org/wiki/MARC_Train">MARC</a>",
-                a band of coworkers that brought wine and cheese to enjoy on the train back home to Washington, D.C. every Friday.
-                Alex was not part of this club, but had heard rumors and wanted in. (Obviously.)
-                She approached the group on the train platform and asked to join.
-                In addition to scoring some delicious train cheese, she got to sit next to Mike on the way home.
-                  </p>
-              <p>
-                On that train ride, they somehow landed on the topic of Russian literature.
-                Alex was a Russian Studies major, and had recently
-                    read <a href="https://en.wikipedia.org/wiki/Crime_and_Punishment">Crime and Punishment</a> by Fyodor Dostoevsky.
-                    One of Mike's favorite novels was <a href="https://en.wikipedia.org/wiki/The_Brothers_Karamazov">The Brothers Karamazov</a>,
-also by Dostoevsky. Neither had read the other, and Mike proposed the idea of swapping books and meeting up at a coffeeshop
-to discuss them when they were finished.
-Mike intended for this to be a date, and read Crime and Punishment in a week in anticipation.
-Alex didn't realize this, and instead took 3 months to read The Brothers Karamazov.
-But it worked out in the end!
-                  </p>
+                Since then, they’ve shared many adventures: visiting sloths in Costa Rica, trekking in the
+                Himalayas, and feeding as many friends as they could pack into their city apartment. Alex
+                converted Mike into a dog lover, and Mike introduced Alex to Rollercoaster Tycoon. They
+                moved to Manhattan, switched careers, then moved to Brooklyn and joined a grocery cooperative.
+              </p>
+              <h1 className="section-header">The rings</h1>
+              <div className="image-container">
+                <img src={ringPhoto} alt="Engagement ring" />
+                <p>
+                  Inspired by his childhood rock collection and <span className="emphasis">The Lord of the Rings</span>,
+                  Mike decided to forge the rings himself with the help of a local metalworker. He finished and
+                  set the stone for the engagement ring in December. After a cold, suspicious walk through Central Park
+                  near their first New York apartment, Mike offered his handiwork. After babbling for a good minute,
+                  Alex remembered to say yes.
+              </p>
+              </div>
             </div>
           </div>
           <div className="timeline-container">
