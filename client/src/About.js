@@ -83,14 +83,15 @@ class About extends Component {
                 Alex and Mike met in Washington DC when she inserted herself into his Friday evening commute.
                 He and a few friends were partaking in their tradition of Friday wine and cheese on the train,
                 and Alex was hungry. Cheese led to conversation, and culminated in an agreement to swap their
-                favorite Russian novels and meet up to discuss over coffee. Of course, Alex didn’t realize
-                this was a date and took three months to read <span className="emphasis">The Brothers Karamazov</span>.
+                favorite Russian novels and meet up to discuss over coffee. (Naturally, Alex didn’t realize
+                this was a date and took three months to read <span className="emphasis">The Brothers Karamazov</span>.)
               </p>
               <p>
                 Since then, they’ve shared many adventures: visiting sloths in Costa Rica, trekking in the
                 Himalayas, and feeding as many friends as they could pack into their city apartment. Alex
-                converted Mike into a dog lover, and Mike introduced Alex to Rollercoaster Tycoon. They
-                moved to Manhattan, switched careers, then moved to Brooklyn and joined a grocery cooperative.
+                converted Mike into a dog lover, and Mike introduced Alex to
+                <span className="emphasis">&nbsp;Rollercoaster Tycoon</span>. They
+              moved to Manhattan, switched careers, then moved to Brooklyn and joined a grocery cooperative.
               </p>
               <h1 className="section-header">The rings</h1>
               <div className="image-container">
@@ -110,7 +111,7 @@ class About extends Component {
             {this.createTable(timelineData)}
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 }
