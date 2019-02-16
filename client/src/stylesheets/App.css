@@ -57,3 +57,11 @@ a:focus {
     padding-top: 72px;
   }
 }
+
+@media only screen and (max-width: 365px) {
+  .content {
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 365px;
+  }
+}

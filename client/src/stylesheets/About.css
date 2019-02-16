@@ -90,7 +90,6 @@
 
 .about-content .image-container img {
   height: 190px;
-  width: 190px;
   margin-bottom: 24px;
 }
 
@@ -152,7 +151,7 @@
   }
   .slides-container {
     width: 472px;
-    margin: 16px 0 72px;
+    margin: 16px 0 64px;
   }
   .slides-container img {
     object-fit: cover;
@@ -172,6 +171,8 @@
   }
   .about-content .image-container img {
     margin-top: 8px;
+    width: 150px;
+    height: 150px;
   }
   .about-content .image-container p {
     margin-left: 0;

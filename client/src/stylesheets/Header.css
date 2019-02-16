@@ -8,6 +8,7 @@
   opacity: 0.5;
   z-index: -1;
   position: relative;
+  min-width: 365px;
 }
 
 .nav-header {
@@ -15,6 +16,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  min-width: 365px;
 
   padding: 0;
   margin: 0;
@@ -43,6 +45,7 @@
   align-content: center;
   margin-left: 24px;
   width: 100%;
+  min-width: 365px;
 }
 
 .nav-link-container a {
@@ -68,7 +71,8 @@
   text-decoration: none;
 }
 
-.nav-link-container a.active:hover {
+.nav-link-container .active:hover {
+  text-decoration: none;
   color: #F1EAD9;
 }
 
@@ -111,6 +115,11 @@
   .nav-link-container .active {
     color: #9DAAB0;
   }
+
+  .nav-link-container a:hover, .nav-link-container .active:hover {
+    color: #9DAAB0;
+  }
+
 
   #sloth-space {
     width: 15%;

@@ -78,7 +78,6 @@ class About extends Component {
               </div>
             </div>
             <div className="about-content">
-              <h1>How we met</h1>
               <p>
                 Alex and Mike met in Washington DC when she inserted herself into his Friday evening commute.
                 He and a few friends were partaking in their tradition of Friday wine and cheese on the train,
@@ -93,7 +92,6 @@ class About extends Component {
                 <span className="emphasis">&nbsp;Rollercoaster Tycoon</span>. They
               moved to Manhattan, switched careers, then moved to Brooklyn and joined a grocery cooperative.
               </p>
-              <h1 className="section-header">The rings</h1>
               <div className="image-container">
                 <img src={ringPhoto} alt="Engagement ring" />
                 <p>
