@@ -13,12 +13,12 @@ class Wedding extends Component {
       <div>
         <Header />
         <div className="content wedding-content-base-container">
-          <div className="wedding-content-container">
-            <div className="wedding-content">
-              <div className="wedding-content-image">
+          <div className="wedding-infobox-container">
+            <div className="wedding-infobox">
+              <div className="wedding-infobox-image">
                 <Image src={headerImage} circle />
               </div>
-              <div className="wedding-content-text">
+              <div className="wedding-infobox-text">
                 <h1>Mike & Alex's Wedding</h1>
                 <h3>Saturday, <span className="date">September 21, 2019</span></h3>
                 <h3>Lyman Estate</h3>
@@ -31,8 +31,6 @@ class Wedding extends Component {
               </div>
             </div>
           </div>
-          <p className="emphasis">More details to follow</p>
-
         </div>
       </div>
     );
