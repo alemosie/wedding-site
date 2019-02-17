@@ -15,8 +15,10 @@ class Header extends Component {
           </div>
           <div className="nav-link-container">
             <NavLink to="/wedding">The Wedding</NavLink>
-            <div id="sloth-space"></div>
+            <div className="header-space"></div>
             <NavLink to="/about">About Us</NavLink>
+            <div className="header-space"></div>
+            <NavLink to="/logistics">Logistics</NavLink>
           </div>
         </div>
       </section>

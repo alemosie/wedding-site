@@ -76,7 +76,7 @@
   color: #F1EAD9;
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 870px) {
   .nav-header {
     flex-direction: column;
     align-items: center;
@@ -120,9 +120,8 @@
     color: #9DAAB0;
   }
 
-
-  #sloth-space {
-    width: 15%;
+  .header-space {
+    width: 9%;
   }
 }
 

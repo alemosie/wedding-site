@@ -7,6 +7,50 @@
   font-size: 16px;
 }
 
+/* Wedding tiles */
+.wedding-tile-container {
+  display: flex;
+  flex-direction: row;
+}
+.wedding-tile {
+  width: 200px;
+  justify-content: center;
+  margin: 24px;
+  border: 4px solid #908C82;
+  position: relative;
+  display: inline-block;
+}
+.wedding-tile h3 {
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+  color: #F1EAD9;
+  background-color: #908C82;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.wedding-tile img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.wedding-tile img:hover {
+  opacity: 0.1;
+}
+.wedding-tile .text {
+  display: none;
+  position: absolute;
+  top: 40px;
+  padding: 8px;
+}
+.wedding-tile a:hover {
+  /* color: #AC543C; */
+  color: black;
+}
+.wedding-tile p:hover {
+  color: #9DAAB0;
+}
+
 /* Wedding infobox */
 
 .wedding-infobox-container {
@@ -31,6 +75,7 @@
 }
 .wedding-infobox-image img {
   width: 200px;
+  height: 200px;
 }
 
 .wedding-infobox-text {
@@ -54,45 +99,8 @@
   white-space: nowrap;
 }
 
-/* Wedding content */
 
-.wedding-content-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.wedding-content-section {
-  width: 400px;
-  margin: 0 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.wedding-content-section img {
-  width: 378px;
-  margin: 4px 0 12px;
-}
-.wedding-content-section h3 {
-  background: #908C82;
-  width: 400px;
-  padding: 8px 0;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  margin-bottom: 0;
-}
-.wedding-content-section-text {
-  border: 4px solid #908C82;
-  padding: 8px;
-  width: 400px;
-}
-.wedding-content-section-text p {
-  font-size: 16px;
-}
-
-
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 760px) {
   .wedding-infobox-container {
     margin-bottom: 16px;
   }

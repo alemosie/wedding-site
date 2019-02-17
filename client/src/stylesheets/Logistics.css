@@ -1,0 +1,47 @@
+.logistics-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logistics-content-column {
+  width: 450px;
+}
+.logistics-content-section {
+  margin: 0 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logistics-content-column.large {
+  width: 650px;
+}
+.logistics-content-section img {
+  width: 100%;
+  margin: 4px 0 12px;
+}
+.logistics-content-container .logistics-content-section > h2 {
+  width: 100%;
+  padding: 0 8px 8px 16px;
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  font-size: 28px;
+}
+.logistics-content-section-text {
+  padding: 16px;
+  width: 100%;
+}
+.logistics-content-section-text p {
+  font-size: 16px;
+}
+.logistics-content-section-text h4 {
+  margin-top: 24px;
+  font-weight: bold;
+}
+#event-description {
+  margin-bottom: 24px;
+}
+#zola-logo {
+  width: 50%;
+  margin: auto;
+}

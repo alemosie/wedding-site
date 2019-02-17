@@ -3,6 +3,7 @@ import { Switch, Route, withRouter } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Wedding from "./Wedding";
+import Logistics from "./Logistics";
 import './stylesheets/App.css';
 
 class Container extends Component {
@@ -15,6 +16,7 @@ class Container extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/wedding" component={Wedding} />
+            <Route path="/logistics" component={Logistics} />
           </Switch>
         </section>
       </div>
