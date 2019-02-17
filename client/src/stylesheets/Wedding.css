@@ -27,7 +27,7 @@
   color: #F1EAD9;
   background-color: #908C82;
   font-weight: bold;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 .wedding-tile img {
   padding: 0;
@@ -42,13 +42,13 @@
   position: absolute;
   top: 40px;
   padding: 8px;
+  font-size: 16px;
 }
 .wedding-tile a:hover {
-  /* color: #AC543C; */
   color: black;
 }
 .wedding-tile p:hover {
-  color: #9DAAB0;
+  color: black;
 }
 
 /* Wedding infobox */
@@ -75,7 +75,6 @@
 }
 .wedding-infobox-image img {
   width: 200px;
-  height: 200px;
 }
 
 .wedding-infobox-text {
@@ -118,6 +117,9 @@
     margin-right: 0;
     margin-bottom: 24px;
   }
+  .wedding-tile-container {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -133,6 +135,9 @@
 }
 
 @media only screen and (max-width: 390px) {
+  .wedding-tile h3 {
+    font-size: 20px;
+  }
   .wedding-infobox {
     padding-top: 0px;
   }

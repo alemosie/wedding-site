@@ -105,7 +105,7 @@ class About extends Component {
             </div>
           </div>
           <div className="timeline-container">
-            <h1>Timeline</h1>
+            <h2>Timeline</h2>
             {this.createTable(timelineData)}
           </div>
         </div>

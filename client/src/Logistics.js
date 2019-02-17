@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from './Header'
 
-import ZolaLogo from './images/zola-logo.jpg'
+import ZolaLogo from './images/zola-logo-small.jpg'
 import './stylesheets/Logistics.css';
 
 class Logistics extends Component {
@@ -41,20 +41,26 @@ class Logistics extends Component {
               </div>
               <div className="logistics-content-section">
                 <h2>Registry</h2>
-                <div className="logistics-content-section-text">
-                  <p>We're truly grateful for your presence at our wedding --
-                  seriously, we're so excited that all of our people will be in one place!</p>
-                  <p>
-                    If you do wish to give a gift, we've created a registry on&nbsp;
-                    <a
-                      href="https://zola.com/registry/mike-and-alex"
-                      target="_blank" rel="noopener noreferrer">
-                      Zola
-                    </a>.
+                <div className="logistics-content-section-text registry-container">
+                  <div>
+                    <p>
+                      We're truly grateful for your presence at our wedding --
+                      seriously, we're so excited that all of our people will be in one place!</p>
+                    <p>
+                      If you do wish to give a gift, we've created a registry on&nbsp;
+                      <a
+                        href="https://zola.com/registry/mike-and-alex"
+                        target="_blank" rel="noopener noreferrer">
+                        Zola
+                      </a>
+                      .
                     </p>
+                  </div>
                   <a
                     href="https://www.zola.com/registry/mike-and-alex"
-                    target="_blank" rel="noopener noreferrer">
+                    target="_blank" rel="noopener noreferrer"
+                    className="zola-logo-container"
+                  >
                     <img src={ZolaLogo} id="zola-logo" alt="Zola logo" />
                   </a>
                 </div>

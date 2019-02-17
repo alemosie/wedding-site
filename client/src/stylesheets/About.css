@@ -17,8 +17,10 @@
   padding: 0px;
 }
 
-.timeline-container h1 {
+.timeline-container h2 {
   margin: 0 0 12px;
+  font-size: 28px;
+  padding-left: 34px;
 }
 
 #timeline {
@@ -133,8 +135,9 @@
     margin-left: 0;
   }
 
-  .about-content-container .timeline-container h2 {
-    margin-left: 0;
+  .timeline-container h2 {
+    padding-left: 0;
+    text-align: center;
   }
 
   .about-content {
@@ -170,7 +173,6 @@
     flex-direction: column;
   }
   .about-content .image-container img {
-    margin-top: 8px;
     width: 150px;
     height: 150px;
   }
