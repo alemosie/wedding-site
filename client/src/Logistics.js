@@ -35,7 +35,7 @@ class Logistics extends Component {
                     </a>
                   </p>
                   <p>
-                    <b>Attire:</b> Cocktail
+                    <b>Attire:</b> Cocktail (semiformal)
                   </p>
                 </div>
               </div>
