@@ -67,6 +67,12 @@
   top: -30px;
 }
 
+@media only screen and (max-width: 900px) {
+  .triangle {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 660px) {
   .home-content h1 {
     font-size: 40px;
@@ -84,22 +90,6 @@
   .home-content a {
     font-size: 16px;
   }
-
-  .triangle {
-    font-size: 40px;
-  }
-  .triangle .top {
-    top: -50px;
-  }
-  .triangle .bottom {
-    top: -24px;
-  }
-  .triangle .right {
-    left: -135px;
-  }
-  .triangle .left {
-    left: 135px;
-  }
 }
 
 @media only screen and (max-width: 421px) {
@@ -108,12 +98,6 @@
   }
   .home-content h1 {
     margin: 0 0 16px;
-  }
-  .triangle .right {
-    left: -120px;
-  }
-  .triangle .left {
-    left: 120px;
   }
 }
 
@@ -125,10 +109,8 @@
   .home-content h2 {
     font-size: 21px;
   }
-  .triangle {
-    display: none;
-  }
 }
+
 @media only screen and (max-width: 342px) {
   .home-content h2 {
     font-size: 18px;
