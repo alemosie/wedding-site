@@ -45,6 +45,23 @@
   width: 50%;
   margin: 8px 8px 8px 0;
 }
+#shuttle-times table {
+  width: 100%;
+  margin-bottom: 12px;
+}
+#shuttle-times th, #shuttle-times td {
+  padding: 8px;
+  border: 1px solid black;
+}
+.logistics-icon {
+  margin-right: 4px;
+}
+.event-details-day h4 {
+  background: #908C82;
+  color: #F1EAD9;
+  padding: 8px;
+  width: fit-content;
+}
 
 @media only screen and (max-width: 870px) {
   .logistics-content-container {
